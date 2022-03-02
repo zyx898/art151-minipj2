@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art151 - Mini Project 2</title>
+    <title>Art 151 Mini Project 2</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        aside {
+        align-items: center;
+          float: left;
+          width: 40%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 60%;
+          background-color: #f1f1f1;
+          height: 300px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 64px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button2 {background-color: #ff5100;} /* Blue */
+
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
 </head>
+
 <body>
+
+
+    <header>
+        <h2>Nike Dunk Low UNC (2021)</h2>
+    </header>
+
+    <section>
+        <article>
+            <h2>Product Description</h2>
+            <p>Nodding to the University of North Carolina Tarheels, the Nike Dunk Low UNC
+                is constructed of a white leather upper with University Blue overlays and Swooshes. From there, a white and
+                University woven Nike tongue label completes the design.</p>
+            <p>The Nike Dunk Low UNC released in June of 2021 and retailed for $100.</p>
+        </article>
+
+
+        <aside>
+          <ul>
+            <img src="https://images.stockx.com/images/Nike-Dunk-Low-UNC-2021-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=2&trim=color&updated_at=1621444894"
+        alt="Nike Dunk Low UNC (2021)">
+            <br>
+            <button class="button button2" onclick="window.location.href='./page/page1.html'">Home Page</button>
+        </ul>
+        </aside>
+        
+
+      </section>
+      
+
     
 </body>
 </html>
